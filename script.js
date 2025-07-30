@@ -98,12 +98,12 @@ ScrollTrigger.matchMedia({
 
   "(max-width: 767px)": function () {
     gsap.to(".about-content h1", {
-      transform: "translateX(-250%)",
+      transform: "translateX(-100%)",
       scrollTrigger: {
         trigger: ".about-content",
         scroller: "body",
-        start: "top 40%",
-        end: "top -200%",
+        start: "top 50%",
+        end: "top -100%",
         scrub: 2,
         pin: true,
         pinSpacing: false
@@ -132,7 +132,7 @@ ScrollTrigger.matchMedia({
         trigger: "#services-right",
         start: "top top",
         end: "+=" + cards.length * 500,
-        scrub: true,
+        scrub: 2,
         pin: true,
         markers: false,
         // pinSpacing: false
@@ -154,7 +154,7 @@ ScrollTrigger.matchMedia({
         trigger: "#services-right",
         start: "top top",
         end: "+=" + cards.length * 500,
-        scrub: true,
+        scrub: 2,
         pin: true,
         markers: false,
         pinSpacing: false
@@ -215,7 +215,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".weekly-articles",
         pin: true,
-        scrub: 1,
+        scrub: 2,
         start: "top top",
         end: () => `+=${cardWidth * cards1.length}`
       }
@@ -233,7 +233,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".weekly-articles",
         pin: true,
-        scrub: 1,
+        scrub: 2,
         start: "top top",
         end: () => `+=${cardWidth * cards1.length}`,
         pinSpacing: false

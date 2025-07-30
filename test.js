@@ -98,12 +98,12 @@ ScrollTrigger.matchMedia({
 
   "(max-width: 767px)": function () {
     gsap.to(".about-content h1", {
-      transform: "translateX(-250%)",
+      transform: "translateX(-100%)",
       scrollTrigger: {
         trigger: ".about-content",
         scroller: "body",
-        start: "top 40%",
-        end: "top -200%",
+        start: "top 60%",
+        end: "top -100%",
         scrub: 2,
         pin: true,
         pinSpacing: false
@@ -204,41 +204,41 @@ ScrollTrigger.matchMedia({
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
-  "(min-width : 768px)": function () {
+  "(min-width : 768px)" : function () {
     const track = document.querySelector(".card-section");
-    const cards1 = gsap.utils.toArray(".weekly-card");
-    const cardWidth = cards1[0].offsetWidth + 60;
+const cards1 = gsap.utils.toArray(".weekly-card");
+const cardWidth = cards1[0].offsetWidth + 60;
 
-    gsap.to(track, {
-      x: () => `-${(cardWidth * cards1.length) - window.innerWidth + 100}`,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".weekly-articles",
-        pin: true,
-        scrub: 1,
-        start: "top top",
-        end: () => `+=${cardWidth * cards1.length}`
-      }
-    });
+gsap.to(track, {
+  x: () => `-${(cardWidth * cards1.length) - window.innerWidth + 100}`,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".weekly-articles",
+    pin: true,
+    scrub: 1,
+    start: "top top",
+    end: () => `+=${cardWidth * cards1.length}`
+  }
+});
   },
 
-  ")max-width : 767px)": function () {
+  ")max-width : 767px)": function() {
     const track = document.querySelector(".card-section");
-    const cards1 = gsap.utils.toArray(".weekly-card");
-    const cardWidth = cards1[0].offsetWidth + 60;
+const cards1 = gsap.utils.toArray(".weekly-card");
+const cardWidth = cards1[0].offsetWidth + 60;
 
-    gsap.to(track, {
-      x: () => `-${(cardWidth * cards1.length) - window.innerWidth + 100}`,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".weekly-articles",
-        pin: true,
-        scrub: 1,
-        start: "top top",
-        end: () => `+=${cardWidth * cards1.length}`,
-        pinSpacing: false
-      }
-    });
+gsap.to(track, {
+  x: () => `-${(cardWidth * cards1.length) - window.innerWidth + 100}`,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".weekly-articles",
+    pin: true,
+    scrub: 1,
+    start: "top top",
+    end: () => `+=${cardWidth * cards1.length}`,
+    pinSpacing: false
+  }
+});
   }
 })
 

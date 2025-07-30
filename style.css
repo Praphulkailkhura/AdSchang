@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'sans-serif';
+   font-family: "Ubuntu", sans-serif;
 }
 
 html,
@@ -160,11 +160,13 @@ nav img {
   font-size: 1.2vw;
   font-weight: 400;
   line-height: 2vw;
-  text-transform: uppercase
+  text-transform: none
 
 }
 
 #right h1{
+   font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
   color: #fff;
   font-size: 10vw;
   line-height: 10vw;
@@ -173,6 +175,7 @@ nav img {
 }
 
 #hero span {
+  font-family: "Borel", cursive;
   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
   -webkit-background-clip: text;
@@ -240,10 +243,9 @@ nav img {
 }
 
 .about-content span{
-  /* color: blue;
   font-style: italic;
-  font-weight: 900; */
-   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
+  font-family: "Borel", cursive;
+  background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,7 +271,6 @@ nav img {
   height: 100%;
   width: 100%;
   transition: all ease 1s;
-  
 }
 
 #about-left img:hover{
@@ -306,9 +307,9 @@ justify-content: center;
 #about-right h3{
   color: white;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 3.5vw;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #section3{
@@ -327,7 +328,7 @@ justify-content: center;
 
 #services-left h1{
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 100px;
   font-weight: 700;
    display: inline-block;
@@ -336,6 +337,8 @@ justify-content: center;
 }
 
 #services-left span{
+  font-style: italic;
+  font-family: "Borel", cursive;
   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
   -webkit-background-clip: text;
@@ -404,6 +407,7 @@ justify-content: center;
 
 #section4 {
   padding: 10px 1vw;
+  width: 100%;
   color: white;
   text-align: center;
   height: 100vh;
@@ -412,7 +416,8 @@ justify-content: center;
 #section4 h2 {
   font-size: 90px;
   margin-bottom: 100px;
-  text-transform: uppercase;
+  width: 100%;
+  text-transform: none;
   white-space: nowrap;
   letter-spacing: 2px;
   display: flex;
@@ -421,6 +426,8 @@ justify-content: center;
 }
 
 #section4 span{
+  font-style: italic;
+  font-family: "Borel", cursive;
   letter-spacing: 1px;
   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
@@ -476,7 +483,7 @@ justify-content: center;
 .project-item .overlay h3 {
   color: white;
   font-size: 24px;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 1px;
 }
 
@@ -491,7 +498,7 @@ justify-content: center;
 #section5 h2 {
   font-size: 90px;
   margin-bottom: 100px;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
   display: flex;
   align-items: start;
@@ -548,7 +555,7 @@ justify-content: center;
 #section6 h2 {
   font-size: 90px;
   margin-bottom: 80px;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 2px;
 }
 
@@ -742,12 +749,13 @@ nav img{
 }
 
 #section2{
-  padding-top: 10vh;
+  padding-top: 0vh;
 }
 
 .about-content h1{
-  font-size: 5em;
-  font-weight: 600;   
+  font-size: 3em;
+  font-weight: 600;  
+  margin-top: 40px; 
 }
 
 #about{
@@ -794,10 +802,12 @@ nav img{
 }
 
 #services-left h1{
-  font-size: 5em;
+  font-size: 3em;
 }
 
+
 #services-right{
+  height: auto;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -821,6 +831,7 @@ nav img{
 }
 
 #section4 {
+  width: 100%;
   margin-top: 20px;
   height: auto;
 }

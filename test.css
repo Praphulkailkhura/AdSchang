@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'sans-serif';
+  /* font-family: 'open sans' sans-serif; */
+  font-family: "Ubuntu", sans-serif;
 }
 
 html,
@@ -159,20 +160,23 @@ nav img {
   width: 25vw;
   font-size: 1.2vw;
   font-weight: 400;
-  line-height: 2vw;
-  text-transform: uppercase
+  line-height: 2.5vw;
+  text-transform: none
 
 }
 
 #right h1{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
   color: #fff;
   font-size: 10vw;
   line-height: 10vw;
   text-align: end;
-  opacity: 1;
+  opacity:1;
 }
 
 #hero span {
+  font-family: "Borel", cursive;
   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
   -webkit-background-clip: text;
@@ -243,6 +247,8 @@ nav img {
   /* color: blue;
   font-style: italic;
   font-weight: 900; */
+  font-style: italic;
+  font-family: "Borel", cursive;
    background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
   background-size: 600% 600%;
   -webkit-background-clip: text;
@@ -306,9 +312,9 @@ justify-content: center;
 #about-right h3{
   color: white;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 3.5vw;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #section3{
@@ -327,7 +333,7 @@ justify-content: center;
 
 #services-left h1{
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 100px;
   font-weight: 700;
    display: inline-block;
@@ -337,6 +343,7 @@ justify-content: center;
 
 #services-left span{
   background: linear-gradient(270deg, #FF6B00, #FC00FF, #00DBDE);
+  font-family: "Borel", cursive;
   background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -353,10 +360,10 @@ justify-content: center;
   text-align: center;
 }
 
-.section-heading {
+/* .section-heading {
   font-size: 50px;
   margin-bottom: 50px;
-}
+} */
 
 .card-stack {
   position: relative;
@@ -743,11 +750,15 @@ nav img{
 
 #section2{
   padding-top: 10vh;
+    height: 100vh;
+  position: relative;
+  overflow: visible;
 }
 
 .about-content h1{
   font-size: 5em;
-  font-weight: 600;   
+  font-weight: 600; 
+  white-space: nowrap;
 }
 
 #about{
